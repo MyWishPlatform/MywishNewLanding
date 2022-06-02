@@ -1,0 +1,180 @@
+//Variables and mixins
+@mixin adaptive-font($pcSize, $mobSize){
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin header{
+    font-family: 'PP Pangram Sans';
+    font-weight: 600;
+}
+
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1180;
+$md1: $maxWidthContainer;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+
+$main: #303030;
+$secondary: #717171;
+$bg_frame: #F1F1F1;
+$bg_gray: #F8F8F8;
+$bg_white: #FFFFFF;
+$stroke: #EBEBEB;
+$yellow: #FFD02F;
+$hover: #FFE280;
+$blue: #386CF6;
+$light_blue: #EBF0FE;
+$error: #FF4040;
+$succes: #5ED400;
+
+
+.container{
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: $md1+px){
+        max-width: 970px;
+    }
+    @media (max-width: $md2+px){
+        max-width: 750px;
+    }
+    @media (max-width: $md3+px){
+        max-width: none;
+        padding: 0 20px;
+    }
+}
+
+//Обнуление
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+:focus,:active{
+    outline: none;
+}
+a:focus,a:active{
+    outline: none;
+}
+
+a, a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 10px;
+}
+button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+ul, li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: url('../img/mainBg.png') top/contain repeat,  $bg_frame;
+    color: $main;
+}
+
+h1,h2,h3,h4,h5{
+    @include header();
+}
+
+h1{
+    font-size: 72px;
+    line-height: 72px;
+}
+h2{
+    font-size: 50px;
+    line-height: 54px;
+}
+h3{
+    font-size: 36px;
+    line-height: 44px;
+}
+h4{
+    font-size: 24px;
+    line-height: 32px;
+}
+h5{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+section{
+    margin-bottom: 100px;
+}
+@media (max-width: $md2 + px){
+    h1{
+        font-size: 60px;
+        line-height: 54px;
+    }
+    h2{
+        font-size: 43px;
+        line-height: 44px;
+    }
+    h3{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    h4{
+        font-size: 21px;
+        line-height: 26px;
+    }
+}
+@media (max-width: $md3 + px){
+    h1{
+        font-size: 48px;
+        line-height: 54px;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 44px;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h4{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    h5{}
+    section{
+        margin-bottom: 80px;
+    }
+}
+@media(max-width: $md4 + px){
+    h1{
+        font-size: 45px;
+    }
+}
+
+
+.link__learn{
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+    @media(max-width: $md2 + px){
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}

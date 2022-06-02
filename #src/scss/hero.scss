@@ -1,0 +1,154 @@
+.hero{
+    padding-top: 125px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__content{
+        width: 500px;
+         @media(max-width: $md3 + px){
+             width: auto;
+             display: flex;
+             align-items: center;
+             text-align: center;
+             flex-direction: column;
+             max-width: none;
+         }
+         @media(max-width: $md4 + px){
+            text-align: left;
+            align-items: start;
+         }
+    }
+    &__additional{
+        width: 100%;
+        text-align: center;
+        max-height: 610px;
+        @media (max-width: $md3 + px){
+            display: none;
+        }
+    }
+    &__subtitle{
+        margin-bottom: 30px;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__description{
+        margin-bottom: 56px;
+        font-size: 18px;
+        line-height: 28px;
+        color: $secondary;
+        @media (max-width: $md3 + px){
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &__img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 7%;
+        @media (max-width: $md2 + 'px'){
+            margin-left: 0;
+        }
+        &.hero__img_mobile{
+            display: inline-block;
+            width: 100%;
+            // margin: 0 auto;
+            @media(min-width: $md3 + px){
+                display: none;
+            }
+            @media(max-width: $md3 + px){
+                margin-right: 25px;
+                width: auto;
+            }
+            @media(max-width: $md4 + px){
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+    &__btn{
+        margin-bottom: 50px;
+        @media(max-width: $md3 + px){
+            padding: 13px 33px;
+            margin-bottom: 10px;
+        }
+    }
+    &__statistic{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: $md3 + px){
+            column-gap: 16px;
+        }
+        @media(max-width: $md4 + px){
+            align-self: center;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+    }
+    &__item{
+        display: flex;
+    }
+    &__icon{
+        margin-right: 16px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__number{
+        font-family: 'PP Pangram Sans', sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        color: $blue;
+        @media(max-width: $md3 + px){
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    &__label{
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary;
+        @media(max-width: $md3 + px){
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    &-grants{
+        &__title{
+            margin-bottom: 20px;
+            @media(max-width: $md2 + px){
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+        &__icons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 16px;
+        }
+        @media (max-width: $md1 + 'px'){
+            &__icons > picture{
+                display: flex;
+                justify-content: center;
+                flex: 0 0 33%;
+            }
+        }
+        @media (max-width: $md2 + 'px'){
+            &{
+                margin-top: 0;
+            }
+        }
+        @media(max-width: $md4 + px){
+            &__icon{
+                width: 140px;
+            }
+        }
+    }
+}

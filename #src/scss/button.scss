@@ -1,0 +1,21 @@
+.btn{
+    display: inline-block;
+    padding: 13px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    background: $yellow;
+    color: $main;
+    transition: all 0.5s;
+    text-align: center;
+    &:hover{
+        background: $hover;
+    }
+    &:disabled{
+        color: $secondary;
+        background: $stroke;
+        pointer-events: none;
+    }
+}

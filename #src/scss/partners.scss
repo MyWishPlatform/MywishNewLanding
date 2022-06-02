@@ -1,0 +1,18 @@
+.partners{
+    &__title{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    &__item{
+        padding: 10px 20px;
+        border-radius: 12px;
+        background: $bg_gray;
+    }
+}

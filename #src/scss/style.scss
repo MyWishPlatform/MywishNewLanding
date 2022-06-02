@@ -1,0 +1,31 @@
+@import "fonts";
+@mixin font($font_name, $file_name, $weight, $style){
+    @font-face{
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{file_name}.ttf") format("truetype");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+@include font('PP Pangram Sans', 'Pangram-Bold', 600, normal);
+@include font('PP Pangram Sans', 'Pangram-Regular', 400, normal);
+@import 'config.scss';
+
+@import 'button.scss';
+@import 'icon.scss';
+@import 'slider.scss'; 
+
+@import 'header.scss';
+@import 'hero.scss';
+@import 'assets.scss';
+@import 'solution.scss';
+@import 'blockchains.scss';
+@import 'clients.scss';
+@import 'feedback.scss';
+@import 'partners.scss';
+@import 'socials.scss';
+@import 'sign.scss';
+@import 'news.scss';
+@import 'footer.scss';
+@import 'modal.scss';

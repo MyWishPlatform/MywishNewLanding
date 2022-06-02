@@ -1,0 +1,97 @@
+.header{
+    position: fixed;
+    padding: 5px 0;
+    top: 0;
+    width: 100%;
+    background: $bg_white;
+    z-index: 9;
+    @media (max-width: $md2+px){
+        padding: 12px 0;
+    }
+    &__logo{
+        height: 37px;
+    }
+    &__btn{
+        padding: 8px 24px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu{
+    }
+    &__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &__item{
+        padding: 16px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__down{
+        transition: all 0.5s;
+    }
+    &__drop{
+        picture{
+            display: flex;
+            align-items: center;
+        }
+        &_active{
+            .header-dropdown{
+                visibility: visible;
+                opacity: 1;
+            }
+            .header__down{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    &-dropdown{
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        opacity: 0;
+        row-gap: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: max-content;
+        padding: 16px;
+        border: 1px solid $stroke;
+        border-radius: 10px;
+        box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1);
+        background: #FFFFFF;
+        cursor: default;
+        transform: translateY(100%);
+        transition: all 0.5s;
+        &__item{
+            display: flex;
+        }
+        &__icon{
+            width: 20px;
+            height: 20px;
+            margin-right: 13px;
+        }
+        &__link{
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

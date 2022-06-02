@@ -1,0 +1,38 @@
+.feedback{
+    &__title{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__subtitle{
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+    }
+    &-swiper__slide{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 380px;
+        padding: 30px;
+        background: #FFFFFF;
+        border: 1px solid #EFEFEF;
+        border-radius: 24px;
+    }
+    &__name{
+       margin-bottom: 20px;
+    }
+    &__message{
+        flex: 1 0 auto;
+        padding-top: 38px;
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary;
+    }
+    &__icon{
+        // flex: ;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+    }
+}

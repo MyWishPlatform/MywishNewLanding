@@ -1,0 +1,111 @@
+.sign{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 70px 70px;
+        background: $bg_gray;
+        border: 1px solid #EFEFEF;
+        border-radius: 24px;
+        @media(max-width: $md1 + px){
+            padding: 45px 25px 70px;
+        }
+    }
+    &-card{
+        display: flex;
+        flex-direction: column;
+        max-width: 234px;
+        padding: 18px;
+        border-radius: 14px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.06);
+        transform: rotate(-15deg);
+        &_right{
+            transform: rotate(15deg);
+        }
+        &__img{
+            margin-bottom: 12px;
+            width: 100%;
+            border-radius: 12px;
+        }
+        &__date{
+            margin-bottom: 12px;
+            color: $secondary;
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 15px;
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 16px;
+        }
+        @media(max-width: $md2 + px) {
+            display: none;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 28px;
+        color: $secondary;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    &__wrap{
+        position: relative;
+        margin-bottom: 24px;
+    }
+    &__input{
+        width: 100%;
+        padding: 13px 16px;
+        border: 1px solid #EBEBEB;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 30px;
+        transition: all 0.5s;
+        &::placeholder{
+            color: $secondary;
+        }
+        &:focus{
+            border: 1px solid $yellow;
+        }
+        &_error{
+            input{
+                border: 1px solid $error;
+            }
+            &::after{
+                content: 'Invalid email format';
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                font-size: 14px;
+                line-height: 21px;
+                color: $error;
+            }
+        }
+    }
+    &__submit{
+        padding: 16px 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    @media(max-width: $md2 + px) {
+        &__container{
+            justify-content: center;
+        }
+    }
+}

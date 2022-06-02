@@ -1,0 +1,110 @@
+.assets{
+    &__title{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        max-width: 611px;
+        text-align: center;
+    }
+    &__subtitle{
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: $secondary;
+        @media(max-width: $md3 + px){
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &__scheme{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        position: relative;
+        gap: 20px;
+        z-index: 3;
+        @media (max-width: $md1 + px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 20px;
+        }
+    }
+    &__bg{
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        top: 48px;
+        bottom: 0;
+        left: 174px;
+        right: 0;
+        z-index: 1;
+        @media (max-width: $md1 + px){
+            display: none;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        min-width: 380px;
+        padding: 30px 0;
+        border: 1px solid #EBEBEB;
+        border-radius: 24px;
+        background: #FFFFFF;
+        z-index: 3;
+        &_1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        &_2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        &_4{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        &_3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        @media(max-width: $md3 + px){
+            min-width: auto;
+        }
+    }
+    &__icon{
+        height: 80px;
+        width: 80px;
+        margin-bottom: 10px;
+        background: $light_blue;
+    }
+    &__step{
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary;
+    }
+    &__label{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__button{
+        padding: 6px 0;
+        min-width: 134px;
+    }
+    &__buttons{
+        display: flex;
+        column-gap: 16px;
+    }
+}

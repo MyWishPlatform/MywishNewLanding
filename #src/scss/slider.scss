@@ -1,0 +1,12 @@
+.swiper{
+    &__arrow{
+        padding: 14px;
+        background: $yellow;
+        border-radius: 8px;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover{
+            background: $hover;
+        }
+    }
+}

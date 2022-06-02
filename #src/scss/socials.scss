@@ -1,0 +1,26 @@
+.socials{
+    &__title{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px; 
+    }
+    &__icon{
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    @media(max-width: $md3 + px){
+        display: none;
+    }
+}

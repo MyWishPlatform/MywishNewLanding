@@ -1,0 +1,13 @@
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    background: #FFFFFF;
+    &__img{
+        width: 100%;
+    }
+}
