@@ -7,6 +7,9 @@
     background: #FFFFFF;
     border: 1px solid #EFEFEF;
     border-radius: 25px;
+    @media(max-width: $md3 + px){
+        padding: 30px;
+    }
     &__overlay{
         display: flex;
         align-items: center;
@@ -24,6 +27,9 @@
         &_inactive{
             visibility: hidden;
             opacity: 0;
+        }
+        @media(max-width: $md3 + px){
+            padding: 10px;
         }
     }
     &__close{
@@ -44,6 +50,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 34px;
+        text-align: center;
     }
     &__btn{
         min-width: 200px;

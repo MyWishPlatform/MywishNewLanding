@@ -1,5 +1,8 @@
 .sign{
-    &__container{
+    @media(max-width: $md3 + px){
+        margin-bottom: 20px;
+    }
+    &__container.container{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -9,6 +12,9 @@
         border-radius: 24px;
         @media(max-width: $md1 + px){
             padding: 45px 25px 70px;
+        }
+        @media(max-width: $md2 + px){
+            justify-content: center;
         }
     }
     &-card{
@@ -57,6 +63,7 @@
         font-size: 18px;
         line-height: 28px;
         color: $secondary;
+        text-align: center;
     }
     &__form{
         display: flex;

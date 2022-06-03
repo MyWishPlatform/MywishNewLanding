@@ -64,7 +64,7 @@
                 width: auto;
             }
             @media(max-width: $md4 + px){
-                width: 100%;
+                width: 97%;
                 margin-right: 0;
             }
         }
@@ -98,13 +98,20 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-align: left;
     }
     &__number{
+        min-width: 122px;
+
         font-family: 'PP Pangram Sans', sans-serif;
         font-size: 36px;
         line-height: 44px;
         color: $blue;
+        @media(max-width: $md2 + px){
+            font-size: 32px;
+        }
         @media(max-width: $md3 + px){
+            min-width: 77px;
             font-size: 24px;
             line-height: 32px;
         }
@@ -147,8 +154,26 @@
         }
         @media(max-width: $md4 + px){
             &__icon{
-                width: 140px;
+                width: 100%;
+            }
+            &__icons > picture{
+                flex: 1 0 46%;
             }
         }
     }
+}
+
+  
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loader{
+    border: 16px solid $bg_gray;
+    border-top: 16px solid $blue;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: spin 2s linear infinite;
 }

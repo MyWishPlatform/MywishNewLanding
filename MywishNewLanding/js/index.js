@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+    function addStr(str, index, stringToAdd){
+        return str.slice(0, index) + stringToAdd + str.slice(index, str. length);
+    }
+    const getStatistic = async () => {
+        const contracts = document.querySelector('.hero__number_contracts');
+        const users = document.querySelector('.hero__number_users');
+        const clientsContracts = document.querySelector('.clients__number_contracts');
+        const clientsUsers = document.querySelector('.clients__number_users');
+
+        let statisticData = await fetch('https://mywish.io/api/v1/get_statistics_landing/');
+        statisticData = await statisticData.json();
+        contracts.textContent = addStr(''+statisticData.contracts, 2, ',');
+        users.textContent = addStr(''+statisticData.users, 2, ',');
+        clientsContracts.textContent = addStr(''+statisticData.contracts, 2, ',');
+        clientsUsers.textContent = addStr(''+statisticData.users, 2, ',');
+
+    }
+
     const swiperBlockchains = new Swiper('.blockchains-swiper', {
         // autoHeight: true,
         slidesPerView: 1,
@@ -10,17 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         breakpoints: {
             768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            992: {
                 slidesPerView: 3,
                 spaceBetween: 30,
-            }
+            },
         }
     });
 
     const swiperFeedback = new Swiper('.feedback-swiper', {
         slidesPerView: 1,
-        centeredSlides: true,
         loop: true,
         watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.feedback-swiper__right',
+            prevEl: '.feedback-swiper__left',
+        },
         breakpoints: {
             768: {
                 slidesPerView: 'auto',
@@ -43,6 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     curActive.classList.remove('header__drop_active');
             }
             target.classList.toggle('header__drop_active');
+        });
+    }
+
+    const menuMobileManager = () => {
+        const burger = document.querySelector('.header__burger'),
+            menu = document.querySelector('.header__menu');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('header__burger_active');
+            menu.classList.toggle('header__menu_active');
         });
     }
 
@@ -84,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
-                768: {
+                992: {
                     slidesPerView: 3,
                     spaceBetween: 20,
                 }
@@ -138,8 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
             modalSuccess.classList.add('modal__overlay_inactive');
         })
     }
+    getStatistic();
     headerManager();
     signManager();
     insertNews();
     tabsManager();
+    menuMobileManager();
 });

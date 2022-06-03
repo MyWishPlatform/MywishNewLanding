@@ -14,5 +14,11 @@
         padding: 10px 20px;
         border-radius: 12px;
         background: $bg_gray;
+        @media(max-width: $md3 + px){
+            flex: 1 0 46%;
+        }
+    }
+    &__img{
+        width: 100%;
     }
 }

@@ -139,7 +139,7 @@
                                 <img src="./img/icons/contracts.svg" alt="Contracts" class="icon__img ">
                             </div>
                             <div class="hero__info">
-                                <span class="hero__number">38,900</span>
+                                <span class="hero__number hero__number_contracts"><div class="loader"></div></span>
                                 <span class="hero__label">Contracts</span>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                                 <img src="./img/icons/users.svg" alt="Contracts" class="icon__img ">
                             </div>
                             <div class="hero__info">
-                                <span class="hero__number">48,500</span>
+                                <span class="hero__number hero__number_users"><div class="loader"></div></span>
                                 <span class="hero__label">Users</span>
                             </div>
                         </div>
@@ -488,11 +488,11 @@
                 </h2>
                 <div class="clients__boxes">
                     <div class="clients__box">
-                        <span class="clients__number">38 900+</span>
+                        <span class="clients__number clients__number_contracts"><div class="loader"></div></span>
                         <span class="clients__lable">Contracts</span>
                     </div>
                     <div class="clients__box">
-                        <span class="clients__number">48 500+</span>
+                        <span class="clients__number clients__number_users" ><div class="loader"></div></span>
                         <span class="clients__lable">Users</span>
                     </div>
                     <div class="clients__box">
@@ -507,20 +507,20 @@
                 <div class="clients__lables">
                     <!-- <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/1irstcoin.svg" alt="1irstcoin" class="clients__img"></a>
                     <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/apandor.svg" alt="apandor" class="clients__img"></a> -->
-                    <!-- <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/blockchain.svg" alt="blockchain" class="clients__img"></a> -->
+                    <a href="https://www.giftedhands.io" target="_blank" class="clients__item"><img src="./img/icons/clients/giftedhands.svg" alt="giftedhands" class="clients__img"></a>
                     <a href="https://www.tofudefi.com/" target="_blank" class="clients__item"><img src="./img/icons/clients/tofu.svg" alt="tofu" class="clients__img"></a>
                     <a href="https://carnomaly.io/" target="_blank" class="clients__item"><img src="./img/icons/clients/carnomaly.svg" alt="carnomaly" class="clients__img"></a>
                     <a href="https://quarashi.network/" target="_blank" class="clients__item"><img src="./img/icons/clients/quarashi.svg" alt="quarashi" class="clients__img"></a>
                     <a href="https://increasor.com" target="_blank" class="clients__item"><img src="./img/icons/clients/increasor.svg" alt="increasor" class="clients__img"></a>
-                    <a href="https://www.elanfuture.com/en/" target="_blank" class="clients__item"><img src="./img/icons/clients/elan.svg" alt="elan" class="clients__img"></a>
+                    <a href="https://mywish.io/audit/MINTO.pdf" target="_blank" class="clients__item"><img src="./img/icons/clients/minto.svg" alt="minto" class="clients__img"></a>
                     <a href="https://efforce.io/" target="_blank" class="clients__item"><img src="./img/icons/clients/efforce.svg" alt="efforce" class="clients__img"></a>
-                    <!-- <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/finamo.svg" alt="finamo" class="clients__img"></a> -->
+                    <a href="https://vdvtoken.io" target="_blank" class="clients__item"><img src="./img/icons/clients/virvia.svg" alt="virvia" class="clients__img"></a>
                     <!-- <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/monsterbyte.svg" alt="monsterbyte" class="clients__img"></a> -->
                     <a href="https://neuroart.io/" target="_blank" class="clients__item"><img src="./img/icons/clients/neuroart.svg" alt="neuroart" class="clients__img"></a>
                     <a href="https://wabi.io/" target="_blank" class="clients__item"><img src="./img/icons/clients/wabi.svg" alt="wabi" class="clients__img"></a>
-                    <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/greenhub.svg" alt="greenhub" class="clients__img"></a>
+                    <!-- <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/greenhub.svg" alt="greenhub" class="clients__img"></a> -->
                     <a href="https://sharpay.io/ru/" target="_blank" class="clients__item"><img src="./img/icons/clients/sharpay.svg" alt="sharpay" class="clients__img"></a>
-                    <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/blockalchemy.svg" alt="blockalchemy" class="clients__img"></a>
+                    <!-- <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/blockalchemy.svg" alt="blockalchemy" class="clients__img"></a> -->
                     <a href="https://bscgirl.site/" target="_blank" class="clients__item"><img src="./img/icons/clients/bscgirl.svg" alt="bscgirl" class="clients__img"></a>
                     <!-- <a href="" target="_blank" class="clients__item"><img src="./img/icons/clients/ozex.svg" alt="ozex" class="clients__img"></a> -->
                 </div>
@@ -534,8 +534,15 @@
                 <p class="feedback__subtitle">
                     We love and grow with our clients.
                 </p>
-            </div>
             <div class="swiper feedback-swiper">
+                <div class="feedback__navigation">
+                    <div class="feedback-swiper__arrow swiper__arrow feedback-swiper__left">
+                        <img src="./img/icons/arrow_right.svg" alt="arrow left" style="transform: rotate(180deg);">
+                    </div>
+                    <div class="feedback-swiper__arrow swiper__arrow feedback-swiper__right">
+                        <img src="./img/icons/arrow_right.svg" alt="arrow right">
+                    </div>
+                </div>
                 <div class="swiper-wrapper feedback-swiper__container">
                     <div class="swiper-slide feedback-swiper__slide">
                         <h4 class="feedback__name">Meyra Martinez</h4>
@@ -614,6 +621,8 @@
                         </a>
                     </div>
                 </div>
+            </div>
+
             </div>
         </section>
         <!-- to do -->
@@ -733,7 +742,7 @@
                 </div>
             </div>
         </section>
-        <section class="sign">
+        <section class="section sign">
             <div class="sign__container container">
                 <div class="sign-card sign-card_left">
                     <img class="sign-card__img" src="./img/news/1.png" alt="How to Craft">
@@ -746,7 +755,7 @@
                 </div>
                 <div class="sign__wrapper">
                     <h2 class="sign__title">
-                        Sign up
+                        Subscribe
                     </h2>
                     <p class="sign__subtitle">Enter your email and get the latest news</p>
                     <form  id="sign-form" class="sign__form">
