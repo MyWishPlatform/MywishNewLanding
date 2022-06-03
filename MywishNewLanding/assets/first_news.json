@@ -1,0 +1,72 @@
+[
+    {
+        "id": "What_is_a_BEP20_token_and_why_does_your_project_need_it",
+        "title": "What is a BEP20 token, and why does your project need it",
+        "date": "12.05.2022",
+        "imgPreview": "1.png",
+        "preview": "BNB Smart Chain* is one of the most popular and viable blockchains on the market. Many successful projects and tokens were launched on it."
+    },
+    {
+        "id": "MyWish_Сross-Сhain_Bridges_Development",
+        "title": "MyWish Сross-Сhain Bridges Development",
+        "date": "22.04.2022",
+        "imgPreview": "2.png",
+        "preview": "The benefits of connecting blockchains Cross-chain has become essential for the blockchain space to prosper. The industry needs to provide connectivity between networks, and cross-chain bridges have become a…"
+    },
+    {
+        "id": "Dear_community",
+        "title": "Dear community!",
+        "date": "19.04.2022",
+        "imgPreview": "3.jfif",
+        "preview": "We are glad to announce that the most anticipated airdrop campaign is finally here! The loyal holders of WISH will be able to receive the tokens of our fellow project, Algebra DEX. Read the information below to find out the…"
+    },
+    {
+        "id": "How_to_сreate_SPL_token_on_Solana_with_no_coding",
+        "title": "How to create SPL token on Solana with no coding",
+        "date": "18.03.2022",
+        "imgPreview": "4.jfif",
+        "preview": "MyWish platform allows you to create a token in seconds without any coding! Read our token creation guide to learn how to deploy a smart contract on Solana Network with zero coding right from the browser at…"
+    },
+    {
+        "id": "MyWish_announces_a_partnership_with_GetBlock",
+        "title": "MyWish announces a partnership with GetBlock",
+        "date": "04.03.2022",
+        "imgPreview": "5.png",
+        "preview": "Our team is excited to share that MyWish has partnered with GetBlock.io, the provider of instant API access to full nodes from multiple blockchains! GetBlock offers access to more than 40 networks helping developers to…"
+    },
+    {
+        "id": "MyWish_and_Math_Wallet_cooperation",
+        "title": "MyWish and Math Wallet cooperation",
+        "date": "01.12.2021",
+        "imgPreview": "6.jfif",
+        "preview": "We are happy to share that MyWish has integrated Math Wallet, a universal crypto wallet supporting 60+ blockchains! From now on, our users can easily complete airdrop with the Math Wallet connection. There is no need…"
+    },
+    {
+        "id": "MyWish_is_launching_a_community_contest_with_Moonbeam",
+        "title": "MyWish is launching a community contest with Moonbeam!",
+        "date": "22.11.2021",
+        "imgPreview": "7.jfif",
+        "preview": "Along with the successful launch of Moonriver to MyWish platform, MyWish team has joined the Moonbeam Universe event to introduce the…"
+    },
+    {
+        "id": "MyWish_Partnered_with_Berry_Data",
+        "title": "MyWish Partnered with Berry Data",
+        "date": "17.11.2021",
+        "imgPreview": "8.jfif",
+        "preview": "MyWish platform is excited to announce the upcoming partnership with Berry Data! Berry Data is an oracle network on Binance Smart Chain offering a decentralized alternative for off-chain data. We are honored that…"
+    },
+    {
+        "id": "Create_an_ERC20_token_on_Moonriver_with_no_coding",
+        "title": "Create an ERC20 token on Moonriver with no coding",
+        "date": "15.10.2021",
+        "imgPreview": "9.png",
+        "preview": "Automatization brought to blockchain technology the ability to generate smart contracts without coding and the need for programming skills. Read the guide below to learn how to create a Moonriver token with no coding…"
+    },
+    {
+        "id": "Build_Your_Own_Crypto_Empire",
+        "title": "Build Your Own Crypto Empire on Moonbeam with Zero Coding",
+        "date": "17.09.2021",
+        "imgPreview": "10.jfif",
+        "preview": "MyWish is excited to announce that we have started our collaboration with Moonbeam, an Ethereum-compatible smart contract parachain on Polkadot. We aim to provide the global crypto community with all the advantages of a multichain approach allowing to reach a wider range of assets, users, markets, ecosystems, and many more…"
+    }
+]
