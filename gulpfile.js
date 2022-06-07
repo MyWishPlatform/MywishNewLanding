@@ -13,7 +13,7 @@ let path={
         asseets: project_folder+"/assets/",
     },
     src: { //для исходников
-        html: [source_folder+"/*.html", "!"+source_folder+"/_*.html"],
+        html: [source_folder+"/**/*.html", "!"+source_folder+"/_*.html"],
         css: source_folder+"/scss/style.scss",
         js: source_folder+"/js/index.js",
         img: source_folder+"/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp,jfif}",//слушаем все подпапки
