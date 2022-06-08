@@ -10,15 +10,15 @@ let path={
         js: project_folder+"/js/",
         img: project_folder+"/img/",
         fonts: project_folder+"/fonts/",
-        asseets: project_folder+"/assets/",
+        assets: project_folder+"/assets/",
     },
     src: { //для исходников
         html: [source_folder+"/**/*.html", "!"+source_folder+"/_*.html"],
         css: source_folder+"/scss/style.scss",
-        js: source_folder+"/js/index.js",
+        js: source_folder+"/js/**/*.js",
         img: source_folder+"/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp,jfif}",//слушаем все подпапки
         fonts: source_folder+"/fonts/*.ttf",
-        asseets: source_folder+"/assets/**/*",
+        assets: source_folder+"/assets/**/*",
     },
     watch: { //для отслеживания постоянно меняющихся файлов
         html: source_folder+"/**/*.html",
@@ -131,8 +131,8 @@ function images(){
 }
 
 function assets(){
-    return src(path.src.asseets)
-        .pipe(dest(path.build.asseets));
+    return src(path.src.assets)
+        .pipe(dest(path.build.assets));
 }
 
 function fonts(params){

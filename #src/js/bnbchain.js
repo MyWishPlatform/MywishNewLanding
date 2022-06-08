@@ -2,41 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function addStr(str, index, stringToAdd){
         return str.slice(0, index) + stringToAdd + str.slice(index, str. length);
     }
-    const getStatistic = async () => {
-        const contracts = document.querySelector('.hero__number_contracts');
-        const users = document.querySelector('.hero__number_users');
-        const clientsContracts = document.querySelector('.clients__number_contracts');
-        const clientsUsers = document.querySelector('.clients__number_users');
-
-        let statisticData = await fetch('https://mywish.io/api/v1/get_statistics_landing/');
-        statisticData = await statisticData.json();
-        contracts.textContent = addStr(''+statisticData.contracts, 2, ',');
-        users.textContent = addStr(''+statisticData.users, 2, ',');
-        clientsContracts.textContent = addStr(''+statisticData.contracts, 2, ',');
-        clientsUsers.textContent = addStr(''+statisticData.users, 2, ',');
-
-    }
-
-    const swiperBlockchains = new Swiper('.blockchains-swiper', {
-        // autoHeight: true,
-        slidesPerView: 1,
-        loop: true,
-        watchSlidesProgress: true,
-        navigation: {
-            nextEl: '.blockchains-swiper__right',
-            prevEl: '.blockchains-swiper__left',
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-        }
-    });
 
     const swiperWatch = new Swiper('.watch-bnbchain-swiper', {
         // autoHeight: true,
@@ -44,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         watchSlidesProgress: true,
         navigation: {
-            nextEl: '.watch-bnbchain__right',
-            prevEl: '.watch-bnbchain__left',
+            nextEl: '.watch__right',
+            prevEl: '.watch__left',
         },
         breakpoints: {
             768: {
@@ -59,19 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const swiperFeedback = new Swiper('.feedback-swiper', {
+    const swiperWatcher = new Swiper('.watch-bnbchain-swiper', {
+        // autoHeight: true,
         slidesPerView: 1,
         loop: true,
         watchSlidesProgress: true,
         navigation: {
-            nextEl: '.feedback-swiper__right',
-            prevEl: '.feedback-swiper__left',
+            nextEl: '.watch-bnbchain-swiper__right',
+            prevEl: '.watch-bnbchain-swiper__left',
         },
         breakpoints: {
             768: {
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-            }
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
         }
     });
 
@@ -98,52 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.addEventListener('click', () => {
             burger.classList.toggle('header__burger_active');
             menu.classList.toggle('header__menu_active');
-        });
-    }
-
-    const insertNews = async () => {
-        let newsData = await fetch('../assets/first_news.json');
-        const newsContainer = document.querySelector('.news-swiper__container');
-        newsData = await newsData.json();
-        newsData.forEach(item => {
-            newsContainer.insertAdjacentHTML('beforeend', 
-            `
-            <div class="swiper-slide news-swiper__slide">
-                <div class="news__img">
-                    <img src="./img/news/${item.imgPreview}" alt="News!">
-                </div>
-                <span class="news__date">
-                    ${item.date}
-                </span>
-                <p class="news__lable">
-                    ${item.title}
-                </p>
-                <a class="news-link link__learn" href="https://mywish.io/news/${item.id}" target="_blank">
-                    Learn more  →
-                </a>
-            </div>`
-            )
-        });
-        const swiperNews = new Swiper('.news-swiper', {
-            // autoHeight: true,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: '.news-swiper__right',
-                prevEl: '.news-swiper__left',
-            },
-            breakpoints: {
-                600: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                }
-            }
         });
     }
 
@@ -186,17 +110,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputContainer.classList.add('sign__input_error');
                 btn.disabled = true;
             }
-            
+
         });
         modalSuccess.addEventListener('click', e => {
             if(e.target.matches('.modal__btn') || e.target.matches('.modal__overlay') || e.target.matches('.modal__close'));
             modalSuccess.classList.add('modal__overlay_inactive');
         })
     }
-    getStatistic();
     headerManager();
     signManager();
-    insertNews();
     tabsManager();
     menuMobileManager();
 });

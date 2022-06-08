@@ -8,6 +8,16 @@
         font-style: #{$style};
     }
 }
+
+.img__wrapper > picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 @include font('PP Pangram Sans', 'Pangram-Bold', 600, normal);
 @include font('PP Pangram Sans', 'Pangram-Regular', 400, normal);
 @import 'config.scss';
@@ -29,3 +39,5 @@
 @import 'news.scss';
 @import 'footer.scss';
 @import 'modal.scss';
+
+@import '../scss/bnbchain/style_bnbchain';
