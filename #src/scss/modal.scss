@@ -20,13 +20,13 @@
         left: 0;
         right: 0;
         background: rgba(0, 0, 0, 0.541);
-        visibility: visible;
-        opacity: 1;
+        visibility: hidden;
+        opacity: 0;
         z-index: 11;
         transition: all 0.7s;
-        &_inactive{
-            visibility: hidden;
-            opacity: 0;
+        &_active{
+            visibility: visible;
+            opacity: 1;
         }
         @media(max-width: $md3 + px){
             padding: 10px;

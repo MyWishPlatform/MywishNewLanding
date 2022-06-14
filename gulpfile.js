@@ -146,13 +146,13 @@ function fonts(params){
     .pipe(dest(path.build.fonts));
 }
 
-gulp.task("otf2ttf", ()=>{
-    return src([source_folder + "/fonts/*.otf"])
+function otf2ttf(){
+    return src(source_folder + "/fonts/*.otf")
         .pipe(fonter({
             formats: ['ttf']
         }))
         .pipe(dest(source_folder + "/fonts/"));
-})
+}
 
 function fontsStyle(params) {
 
@@ -191,7 +191,7 @@ function clean(params){
 
 
 
-let build = gulp.series(clean, gulp.parallel(assets, css, js, html, images, fonts));
+let build = gulp.series(clean, otf2ttf, gulp.parallel(assets, css, js, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 // exports.fontsStyle = fontsStyle;

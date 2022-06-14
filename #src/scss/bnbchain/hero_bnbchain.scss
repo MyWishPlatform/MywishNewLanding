@@ -39,7 +39,7 @@
       border-radius: 12px;
       font-weight: 500;
       font-size: 16px;
-      max-width: 252px;
+      max-width: 253px;
       color: $blue;
       padding: 8px 24px;
     @media (max-width: $md3 + px){
@@ -71,6 +71,7 @@
        max-width: 100%;
        max-height: 100%;
        margin-left: 7%;
+       margin-top: 94px;
   @media (max-width: $md1 + 'px'){
     margin-left: 50px;
     margin-top: 80px;
@@ -78,23 +79,36 @@
   @media (max-width: $md2 + 'px'){
       margin-left: 0;
       margin-top: 180px;
+      display: none;
   }
   &.hero__img_mobile{
        display: inline-block;
        width: 100%;
    // margin: 0 auto;
-  @media(min-width: $md3 + px){
-      display: none;
-  }
-  @media(max-width: $md3 + px){
 
-      margin-top: -2px;
-      width: auto;
+  @media(min-width: $md3 + px){
+    display: none;
   }
-  @media(max-width: $md4 + px){
+    @media(max-width: $md2 + px){
+      display: inline-block;
+      margin-left: 128px;
+      margin-top: 62px;
       width: 97%;
       margin-right: 0;
-  }
+    }
+    @media(max-width: $md3 + px){
+      display: inline-block;
+      margin-left: 0;
+      margin-top: 0;
+      width: 97%;
+      margin-right: 0;
+    }
+    //@media(max-width: $md4 + px){
+    //  width: 97%;
+    //  margin-left: 128px;
+    //  margin-top: 62px;
+    //  margin-right: 0;
+    //}
   }
   }
   &__btn{
@@ -102,7 +116,7 @@
        margin-bottom: 0;
   @media(max-width: $md3 + px){
       padding: 13px 33px;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
   }
   }
   &__statistic{
@@ -122,6 +136,9 @@
    }
   &__icon{
        margin-right: 16px;
+    @media(max-width: $md1 + px){
+      margin-right: 0;
+    }
    }
   &__info{
        display: flex;

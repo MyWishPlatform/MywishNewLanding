@@ -15,11 +15,18 @@
             display: none;
         }
     }
+    &__description {
+        color: $secondary;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
     &-switcher{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 12px 0;
+        padding: 12px;
         width: 100%;
         background: #FFFFFF;
         border-radius: 8px;
@@ -81,6 +88,12 @@
         }
         &__title{
             margin-right: 6px;
+            &_crowdsale {
+                white-space: nowrap;
+                @media(max-width: $md1 + px){
+                    white-space: initial;
+                }
+            }
         }
         &__icon{
             width: 41px;
@@ -103,11 +116,13 @@
             margin-bottom: 50px;
         }
         &__point{
+            display: flex;
             font-size: 16px;
             line-height: 26px;
         }
         &__point::before{
             content: counter(item, decimal-leading-zero) ". ";
+            margin-right: 4px;
             counter-increment: item;
             color: $blue;
         }
@@ -142,6 +157,12 @@
         &__img{
             max-height: 100%;
             max-width: 100%;
+            &_tablet {
+                margin-bottom: -138px;
+                @media(max-width: $md3 + px){
+                    margin-bottom: -98px;
+                }
+            }
         }
         &__buttons{
             display: flex;

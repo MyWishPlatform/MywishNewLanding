@@ -1,14 +1,14 @@
-@import "fonts";
-@mixin font($font_name, $file_name, $weight, $style){
-    @font-face{
-        font-family: $font_name;
-        font-display: swap;
-        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{file_name}.ttf") format("truetype");
-        font-weight: #{$weight};
-        font-style: #{$style};
-    }
-}
-
+//@import "fonts";
+//@mixin font($font_name, $file_name, $weight, $style){
+//    @font-face{
+//        font-family: $font_name;
+//        font-display: swap;
+//        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{file_name}.ttf") format("truetype");
+//        font-weight: #{$weight};
+//        font-style: #{$style};
+//    }
+//}
+//
 .img__wrapper > picture {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -18,8 +18,8 @@
     justify-content: center;
 }
 
-@include font('PP Pangram Sans', 'Pangram-Bold', 600, normal);
-@include font('PP Pangram Sans', 'Pangram-Regular', 400, normal);
+//@include font('PP Pangram Sans', 'Pangram-Bold', 600, normal);
+//@include font('PP Pangram Sans', 'Pangram-Regular', 400, normal);
 @import 'config.scss';
 
 @import 'button.scss';

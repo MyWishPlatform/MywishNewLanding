@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter:regular,500,600" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/Pangram-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/Pangram-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PPPangramSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PPPangramSans-Semibold.ttf" as="font" type="font/ttf" crossorigin>
+    <style>
+            @font-face{
+                font-family: 'PP Pangram Sans';
+                font-display: swap;
+                src: url("./fonts/Pangram-Regular.ttf") format("truetype");
+                font-weight: 400;
+                font-style: normal;
+            }
+            @font-face{
+                font-family: 'PP Pangram Sans';
+                font-display: swap;
+                src: url("./fonts/Pangram-Bold.ttf") format("truetype");
+                font-weight: 600;
+                font-style: normal;
+            }
+            @font-face{
+                font-family: 'PP Pangram Sans Test';
+                font-display: swap;
+                src: url("./fonts/PPPangramSans-Bold.ttf") format("opentype");
+                font-weight: 600;
+                font-style: normal;
+            }
+            @font-face{
+                font-family: 'PP Pangram Sans Test';
+                font-display: swap;
+                src: url("./fonts/PPPangramSans-Semibold.ttf") format("opentype");
+                font-weight: 400;
+                font-style: normal;
+            }
+    </style>
     <link
   rel="stylesheet"
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -124,7 +159,7 @@
                     </h5>
                     <h1 class="hero__title">
                         Create Smart Contract 
-                        witout&nbsp;coding
+                        without&nbsp;coding
                     </h1>
                     <p class="hero__description">
                         Create your own Token, Smart-Contract, Cross-Chain Bridge & AirDrop in the easiest way with no coding skills required on MyWish
@@ -386,7 +421,7 @@
                             <p class="blockchains__description">
                                 Create, Manage, and Distribute BEP20 tokens with MyWish no code solutions
                             </p>
-                            <a href="https://mywish.io/binance-token" target="_blank" class="blockchains__link link__learn">Discover solutions  →</a>
+                            <a href="https://mywish.io/bnbchain" target="_blank" class="blockchains__link link__learn">Discover solutions  →</a>
                         </div>
                         <div class="blockchains__slide swiper-slide">
                             <div class="blockchains__img">
@@ -760,11 +795,11 @@
                     <p class="sign__subtitle">Enter your email and get the latest news</p>
                     <form  id="sign-form" class="sign__form">
                         <div class="sign__wrap">
-                            <input class="sign__input" placeholder="Enter your email"
+                            <input id="sign__input" class="sign__input" placeholder="Enter your email"
                             type="email"
                             name="email">
                         </div>
-                        <button class="btn sign__submit" type="submit">
+                        <button onclick="checkAndSend()" id="sign__submit" class="btn sign__submit">
                             Continue
                         </button>
                     </form>

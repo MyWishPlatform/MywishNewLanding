@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 0;
+    padding: 12px;
     width: 100%;
     background: #FFFFFF;
     border-radius: 8px;
@@ -103,6 +103,7 @@
       margin-bottom: 50px;
     }
     &__point{
+      display: flex;
       font-size: 16px;
       line-height: 26px;
       color: $secondary;
