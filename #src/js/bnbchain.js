@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const btn = form.querySelector('.sign__submit');
         const modalSuccess = document.getElementById('modal-success');
         input.addEventListener('blur', (e) => {
-            if(!e.target.checkValidity()){
+            if(!isEmailValid(input.value)){
                 inputContainer.classList.add('sign__input_error');
                 btn.disabled = true;
             } else {
@@ -104,17 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', e => {
             e.preventDefault();
             if(input.value){
-                modalSuccess.classList.remove('modal__overlay_inactive');
+                modalSuccess.classList.add('modal__overlay_active');
                 input.value = '';
             } else{
-                inputContainer.classList.add('sign__input_error');
                 btn.disabled = true;
             }
 
         });
         modalSuccess.addEventListener('click', e => {
             if(e.target.matches('.modal__btn') || e.target.matches('.modal__overlay') || e.target.matches('.modal__close'));
-            modalSuccess.classList.add('modal__overlay_inactive');
+            modalSuccess.classList.remove('modal__overlay_active');
         })
     }
     headerManager();
@@ -122,3 +121,49 @@ document.addEventListener('DOMContentLoaded', () => {
     tabsManager();
     menuMobileManager();
 });
+
+const submitForm = async (email) => {
+    const params = `p1=${email}`;
+    fetch(`https://script.google.com/macros/s/AKfycbzTYWVM_7ZLfGiGhJzxvmcVb545SV2HNt5E8HQUrtRvn2bj72Jq2W4qdpqRchaQPRg/exec?${params}`, {
+        method: "GET",
+        mode: 'no-cors'
+    }).then((res) => {
+            console.log('email sent', res);
+        }
+    );
+}
+
+const isEmpty = (value) => {
+    return (value == null) || (value.length == 0);
+};
+
+const isEmailValid = (value) => {
+    let error;
+    const re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+    if (re.test(value)) error = false;
+    else error = true;
+    if(isEmpty(value)) error = true;
+    return !error;
+}
+
+const checkAndSendBnB = (e) => {
+    let value = document.getElementById('sign__input').value;
+    let error = !isEmailValid(value);
+    const form = document.getElementById('sign-form');
+    const button = document.getElementById('sign__submit');
+    const inputContainer = form.querySelector('.sign__wrap');
+    const modalSuccess = document.getElementById('modal-success');
+    if (!error) {
+        document.getElementById('sign__input').value = '';
+        modalSuccess.classList.add('modal__overlay_active');
+        submitForm(value.trim()).then(() => {});
+        button.style.pointerEvents = 'none';
+        setTimeout(() => {
+            button.style.pointerEvents = '';
+            inputContainer.classList.remove('sign__input_error');
+            button.disabled = false;
+        }, 2000);
+    } else {
+        inputContainer.classList.add('sign__input_error');
+    }
+};
