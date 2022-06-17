@@ -101,8 +101,9 @@
           top: 96px;
         }
         @media(max-width: $md2 + px){
-          left: 190px;
-          top: 80px;
+          position: absolute;
+          left: 222px;
+          top: 96px;
         }
         @media(max-width: $md3 + px){
           position: initial;
