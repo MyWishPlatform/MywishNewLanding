@@ -1,10 +1,17 @@
-.solution-bnbchain {
+.solution-polygon {
   &__title{
     margin-bottom: 40px;
     text-align: center;
     @media(max-width: $md3 + px){
       margin-bottom: 20px;
     }
+  }
+  &__description{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $secondary;
   }
   &__swithers{
     display: flex;
@@ -14,13 +21,6 @@
     @media(max-width: $md3 + px){
       display: none;
     }
-  }
-  &__description {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 16px;
-    line-height: 24px;
-    color: $secondary;
   }
   &-switcher{
     display: flex;
@@ -81,12 +81,6 @@
         padding: 20px 20px 30px;
       }
     }
-    &__description {
-      margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 24px;
-      color: $secondary;
-    }
     &__header{
       display: flex;
       align-items: center;
@@ -100,6 +94,50 @@
       height: 41px;
       background: rgba(56, 108, 246, 0.06);
       border-radius: 7px;
+      &_generator {
+        @media(max-width: $md1 + px){
+          position: absolute;
+          left: 222px;
+          top: 96px;
+        }
+        @media(max-width: $md2 + px){
+          position: absolute;
+          left: 222px;
+          top: 96px;
+        }
+        @media(max-width: $md3 + px){
+          position: initial;
+        }
+      }
+      &_crowdsale {
+        position: absolute;
+        left: 186px;
+        top: 96px;
+        @media(max-width: $md2 + px){
+          left: 206px;
+          top: 80px;
+        }
+        @media(max-width: $md3 + px){
+          position: initial;
+        }
+      }
+      &_cross {
+        @media(max-width: $md2 + px){
+          position: absolute;
+          left: 154px;
+          top: 80px;
+        }
+        @media(max-width: $md3 + px){
+          position: initial;
+        }
+      }
+    }
+    &__description{
+      max-width: 500px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      color: $secondary;
     }
     &__list{
       display: flex;

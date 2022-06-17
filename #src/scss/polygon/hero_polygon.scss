@@ -1,5 +1,10 @@
-.hero-bnbchain{
+.hero-polygon {
   padding-top: 184px;
+  margin-bottom: 0;
+  //@media (max-height: 1000px) {
+  //  padding-top: 184px;
+  //  height: 100vh;
+  //}
   @media(max-width: $md3 + px){
     padding-top: 0;
     padding-bottom: 0;
@@ -34,13 +39,10 @@
   }
   &__subtitle{
       margin-bottom: 30px;
-      background: rgba(56, 108, 246, 0.04);
       border-radius: 12px;
       font-weight: 500;
       font-size: 16px;
       max-width: 253px;
-      color: $blue;
-      padding: 8px 24px;
     @media (max-width: $md3 + px){
       min-width: 100%;
     }

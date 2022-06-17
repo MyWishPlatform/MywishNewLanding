@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return str.slice(0, index) + stringToAdd + str.slice(index, str. length);
     }
 
-    const swiperWatch = new Swiper('.watch-bnbchain-swiper', {
+    const swiperWatch = new Swiper('.watch-polygon-swiper', {
         // autoHeight: true,
         slidesPerView: 1,
         loop: true,
@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const swiperWatcher = new Swiper('.watch-bnbchain-swiper', {
+    const swiperWatcher = new Swiper('.watch-polygon-swiper', {
         // autoHeight: true,
         slidesPerView: 1,
         loop: true,
         watchSlidesProgress: true,
         navigation: {
-            nextEl: '.watch-bnbchain-swiper__right',
-            prevEl: '.watch-bnbchain-swiper__left',
+            nextEl: '.watch-polygon-swiper__right',
+            prevEl: '.watch-polygon-swiper__left',
         },
         breakpoints: {
             768: {
@@ -81,16 +81,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const tabsManager = () => {
-        const switchers = document.querySelector('.solution-bnbchain__swithers');
-        const tabs = document.querySelector('.solution-bnbchain__tabs');
+        const switchers = document.querySelector('.solution-polygon__swithers');
+        const tabs = document.querySelector('.solution-polygon__tabs');
         switchers.addEventListener('click', (e) => {
-            const elem = e.target.closest('.solution-bnbchain-switcher');
+            const elem = e.target.closest('.solution-polygon-switcher');
             if(elem){
-                switchers.querySelector('.solution-bnbchain-switcher_active').classList.remove('solution-bnbchain-switcher_active');
+                switchers.querySelector('.solution-polygon-switcher_active').classList.remove('solution-polygon-switcher_active');
                 const id = elem.id.split('-')[1];
-                elem.classList.add('solution-bnbchain-switcher_active');
-                tabs.querySelector('.solution-bnbchain-tab_active').classList.remove('solution-bnbchain-tab_active');
-                tabs.querySelector(`#solution-bnbchain-tab_${id}`).classList.add('solution-bnbchain-tab_active');
+                elem.classList.add('solution-polygon-switcher_active');
+                tabs.querySelector('.solution-polygon-tab_active').classList.remove('solution-polygon-tab_active');
+                tabs.querySelector(`#solution-polygon-tab_${id}`).classList.add('solution-polygon-tab_active');
             }
         });
     }
@@ -155,7 +155,7 @@ const isEmailValid = (value) => {
     return !error;
 }
 
-const checkAndSendBnB = (e) => {
+const checkAndSendPolygon = (e) => {
     let value = document.getElementById('sign__input').value;
     let error = !isEmailValid(value);
     const form = document.getElementById('sign-form');
