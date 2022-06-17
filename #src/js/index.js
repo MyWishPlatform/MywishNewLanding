@@ -77,6 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    window.addEventListener('click', (e) => {
+        if(!e.target.closest('.header__links') && !e.target.closest('.header-dropdown')){
+            const headerLinks = document.querySelector('.header__links');
+            const curActive = headerLinks.querySelector('.header__drop_active');
+            if(curActive)
+                curActive.classList.remove('header__drop_active');
+        }
+    });
+
     const headerManager = () => {
         const headerLinks = document.querySelector('.header__links');
         headerLinks.addEventListener('click', e => {
