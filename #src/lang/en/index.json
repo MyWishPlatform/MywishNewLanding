@@ -1,0 +1,275 @@
+{
+  "COMMON": {
+    "LEARN_MORE": "Learn more",
+    "BUTTONS": {
+      "CREATE_TOKEN": "Create token",
+      "CROWDSALE": "Crowdsale",
+      "AIRDROP": "Airdrop",
+      "CROSS_CHAIN": "Cross-Chain",
+      "TOKEN_PROTECTOR": "Token protector",
+      "APPLY_FOR_DEVELOPMENT": "Apply for development",
+      "LAUNCH_APP": "Launch App",
+      "CREATE_NOW": "Create now",
+      "PROTECT_TOKENS": "Protect tokens",
+      "CONTINUE": "Continue",
+      "GET_STARTED": "Get Started",
+      "LAUNCH_BEP20_TOKEN": "Launch BEP20 token",
+      "LAUNCH_CROWDSALE_ON_BSC": "Launch Crowdsale on BSC"
+    }
+  },
+  "HEADER": {
+    "MAIN_MENU": {
+      "ITEM_1": "About us",
+      "ITEM_2": "Blockchains",
+      "ITEM_3": "Solutions",
+      "ITEM_4": "Blog"
+    }
+  },
+  "SECTIONS": {
+    "HERO": {
+      "MAIN_PAGE": {
+        "TITLE": "Create Smart Contract without coding",
+        "ADDITIONAL": "No Code Blockchain Solutions",
+        "DESCRIPTION": "Create your own Token, Smart-Contract, Cross-Chain Bridge & AirDrop in the easiest way with no coding skills required on MyWish",
+        "CONTRACTS": "Contracts",
+        "USERS": "Users",
+        "GRANTS_AND_HACKATONS": "Grants and Hackatons"
+      },
+      "BSC_PAGE": {
+        "TITLE": "Create, Distribute and Manage assets on\nBNB Chain without coding",
+        "ADDITIONAL": "Binance Partner since 2018"
+      }
+    },
+    "ASSETS": {
+      "TITLE": "One-Stop Solution for Crypto Assets Management",
+      "DESCRIPTION": "Decentralized full cycle tooling ecosystem:",
+      "BLOCKS": {
+        "ITEM_1": {
+          "TITLE": "Create Crypto Assets",
+          "STEP:": "1 step"
+        },
+        "ITEM_2": {
+          "TITLE": "Distribute",
+          "STEP:": "2 step"
+        },
+        "ITEM_3": {
+          "TITLE": "Manage and Scale",
+          "STEP:": "3 step"
+        },
+        "ITEM_4": {
+          "TITLE": "Protect & Secure",
+          "STEP:": "4 step"
+        }
+      }
+    },
+    "SOLUTIONS": {
+      "MAIN_PAGE": {
+        "TITLE": "Our solutions",
+        "SWIPER_MENU": {
+          "ITEM_1": "Token Generator",
+          "ITEM_2": "Airdrop Service",
+          "ITEM_3": "Cross-Chain",
+          "ITEM_4": "Token Protector"
+        },
+        "BLOCKS": {
+          "ITEM_1": {
+            "TITLE": "Token Generator",
+            "DESCRIPTION": "Launch your own token without coding to any blockchain of your choice. Create and deploy pre audited token contract for a few minutes, right from your browser in 3 steps:",
+            "LIST": {
+              "ITEM_1": "Choose blockchain",
+              "ITEM_2": "Customize, deploy and mint",
+              "ITEM_3": "Get 100% ownership of your token"
+            }
+          },
+          "ITEM_2": {
+            "TITLE": "Airdrop Service",
+            "DESCRIPTION": "Efficient token distribution tool for token airdrops to multiple addresses. Send tokens to up to 2000 addresses per transaction in 3 simple steps:",
+            "LIST": {
+              "ITEM_1": "Upload a list of addresses and approve",
+              "ITEM_2": "Send tokens",
+              "ITEM_3": "Save time and gas fees with MyWish Airdrop"
+            }
+          },
+          "ITEM_3": {
+            "TITLE": "Cross-Chain",
+            "DESCRIPTION": "Have your assets wrapped to other blockchain standards. A bridge provides an opportunity to have tokens circulate in different networks at the same time. Create a fully custom white label bridge on a turn-key basis:",
+            "LIST": {
+              "ITEM_1": "Reach the audience of new networks",
+              "ITEM_2": "Discover new trading platforms",
+              "ITEM_3": "Get competitive transaction terms"
+            }
+          },
+          "ITEM_4": {
+            "TITLE": "Token Protector",
+            "DESCRIPTION": "Decentralized protection to restore tokens to your backup wallet. Save your tokens from private key loss in 4 steps:",
+            "LIST": {
+              "ITEM_1": "Enter contract parameters",
+              "ITEM_2": "Define backup address",
+              "ITEM_3": "Deploy",
+              "ITEM_4": "Approve tokens"
+            }
+          }
+        }
+      },
+      "BSC_PAGE": {
+        "TITLE": "Solutions",
+        "DESCRIPTION": "Create your own Token, Crowdsale Smart-Contract, Cross-Chain Bridge &\nAirDrop in the easiest way with no coding skills required",
+        "EXTENTIONS": "Extentions:",
+        "SWIPER_MENU": {
+          "ITEM_1": "BEP20 Token Generator",
+          "ITEM_2": "Crowdsale contract on BSC",
+          "ITEM_3": "Airdrop Service",
+          "ITEM_4": "Cross-Chain Bridges"
+        },
+        "BLOCKS": {
+          "ITEM_1": {
+            "TITLE": "BEP20 Token Generator",
+            "DESCRIPTION": "Create and issue token on BNB Chain with no coding",
+            "LIST": {
+              "ITEM_1": "Fast & Easy solution",
+              "ITEM_2": "Fully customized",
+              "ITEM_3": "100% ownership",
+              "ITEM_4": "Secure pre-audited contracts"
+            },
+            "EXTENTIONS": "“White label” solution, token verification, brand report"
+          },
+          "ITEM_2": {
+            "TITLE": "Crowdsale contract on BSC",
+            "DESCRIPTION": "Launch a token sale smart contract from your browser in just a few clicks",
+            "LIST": {
+              "ITEM_1": "Create token and crowdsale at once",
+              "ITEM_2": "Fully customized",
+              "ITEM_3": "100% ownership",
+              "ITEM_4": "Secure pre-audited contracts"
+            },
+            "EXTENTIONS": "“White label” solution, token verification, brand report"
+          },
+          "ITEM_3": {
+            "TITLE": "Airdrop Service",
+            "DESCRIPTION": "Distribute Tokens in batches to Multiple addresses",
+            "LIST": {
+              "ITEM_1": "No need of contract deployment",
+              "ITEM_2": "Up to 2,000 addresses in one click",
+              "ITEM_3": "Deflationary tokens supported",
+              "ITEM_4": "One of the cheapest solution on the market"
+            },
+            "EXTENTIONS": "Try to launch Airdrop in testnet for free"
+          },
+          "ITEM_4": {
+            "TITLE": "Cross-Chain Bridges",
+            "DESCRIPTION": "Use benefits of different blockchains at the same time.",
+            "LIST": {
+              "ITEM_1": "Turn-key development",
+              "ITEM_2": "Fully customized",
+              "ITEM_3": "100% ownership",
+              "ITEM_4": "Full control over the bridge operations"
+            },
+            "EXTENTIONS": "“White label” solution, token verification, brand report"
+          }
+        }
+      }
+    },
+    "BLOCKCHAINS": {
+      "TITLE": "Supported Blockchains",
+      "DISCOVER_SOLUTIONS": "Discover solutions"
+    },
+    "CLIENTS": {
+      "TITLE": "MyWish clients",
+      "BLOCKS": {
+        "ITEM_1": "Contracts",
+        "ITEM_2": "Users",
+        "ITEM_3": "Airdrop Service",
+        "ITEM_4": "Bridges"
+      }
+    },
+    "FEEDBACK": {
+      "TITLE": "What people are saying",
+      "DESCRIPTION": "We love and grow with our clients."
+    },
+    "NEWS": {
+      "TITLE": "Last News",
+      "ALL_NEWS": "All news",
+      "LEARN_MORE": "Learn more"
+    },
+    "PARTNERS": {
+      "TITLE": "Partners"
+    },
+    "SOCIALS": {
+      "TITLE": "MyWish on socials"
+    },
+    "SUBSCRIBE": {
+      "TITLE": "Subscribe",
+      "DESCRIPTION": "Enter your email and get the latest news",
+      "PLACEHOLDER": "Enter your email"
+    }
+  },
+  "FEATURES": {
+    "TITLE": "Features",
+    "BLOCKS": {
+      "ITEM_1": "Pre-Audited Smart Contracts",
+      "ITEM_2": "Get 100% Ownership",
+      "ITEM_3": "Automated Deployment",
+      "ITEM_4": "Smart Contracts Library",
+      "ITEM_5": "Service Extension: Verification, Branded report"
+    }
+  },
+  "HOW": {
+    "TITLE": "How It Works"
+  },
+  "WATCH": {
+    "TITLE": "Watch Our Tutorials",
+    "WATCH_TUTORIAL": "Watch tutorial",
+    "BLOCKS": {
+      "ITEM_1": "How to create BEP20 token in Testnet",
+      "ITEM_2": "MyWish Airdrop v2",
+      "ITEM_3": "How to verify BEP20 source on Binance scan"
+    }
+  },
+  "WHY": {
+    "TITLE": "Why MyWish?",
+    "BLOCKS": {
+      "ITEM_1": "Over 38,000 Smart Contracts created",
+      "ITEM_2": "More than 48,000 users",
+      "ITEM_3": "5-year experience of Smart Contract deployment"
+    }
+  },
+  "FOOTER": {
+    "COLUMNS": {
+      "LIST_1": {
+        "TITLE": "Company",
+        "ITEM_1": "About Us",
+        "ITEM_2": "Team",
+        "ITEM_3": "Guides",
+        "ITEM_4": "Contact"
+      },
+      "LIST_2": {
+        "TITLE": "Supported networks",
+        "ITEM_1": "Ethereum",
+        "ITEM_2": "Polygon",
+        "ITEM_3": "Moonriver",
+        "ITEM_4": "EOS",
+        "ITEM_5": "XDC",
+        "ITEM_6": "Tron",
+        "ITEM_7": "BNB Smart Chain",
+        "ITEM_8": "Solana",
+        "ITEM_9": "HECO Chain",
+        "ITEM_10": "Neo",
+        "ITEM_11": "Near"
+      },
+      "LIST_3": {
+        "TITLE": "Solutions",
+        "ITEM_1": "Token Generator",
+        "ITEM_2": "Cross-Chain Solutions",
+        "ITEM_3": "Airdrop Service",
+        "ITEM_4": "Automated Smart Contracts Creation",
+        "ITEM_5": "Token Protector",
+        "ITEM_6": "Custom Blockchain Development"
+      },
+      "LIST_4": {
+        "TITLE": "Terms & Policies",
+        "ITEM_1": "Terms of Servise",
+        "ITEM_2": "Privacy Policy"
+      }
+    }
+  }
+}
