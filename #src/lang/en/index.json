@@ -1,6 +1,7 @@
 {
   "COMMON": {
     "LEARN_MORE": "Learn more",
+    "EXTENTIONS": "Extentions",
     "BUTTONS": {
       "CREATE_TOKEN": "Create token",
       "CROWDSALE": "Crowdsale",
@@ -23,6 +24,18 @@
       "ITEM_2": "Blockchains",
       "ITEM_3": "Solutions",
       "ITEM_4": "Blog"
+    },
+    "ABOUT_MENU": {
+      "ITEM_1": "About us",
+      "ITEM_2": "Team",
+      "ITEM_3": "Guides",
+      "ITEM_4": "Contact"
+    },
+    "SOLUTIONS_MENU": {
+      "ITEM_1": "Token Generator",
+      "ITEM_2": "Cross-Chain Bridge",
+      "ITEM_3": "Airdrop Service",
+      "ITEM_4": "Custom Blockchain Development"
     }
   },
   "SECTIONS": {
@@ -46,19 +59,19 @@
       "BLOCKS": {
         "ITEM_1": {
           "TITLE": "Create Crypto Assets",
-          "STEP:": "1 step"
+          "STEP": "1 step"
         },
         "ITEM_2": {
           "TITLE": "Distribute",
-          "STEP:": "2 step"
+          "STEP": "2 step"
         },
         "ITEM_3": {
           "TITLE": "Manage and Scale",
-          "STEP:": "3 step"
+          "STEP": "3 step"
         },
         "ITEM_4": {
           "TITLE": "Protect & Secure",
-          "STEP:": "4 step"
+          "STEP": "4 step"
         }
       }
     },
@@ -181,6 +194,9 @@
         "ITEM_3": "Airdrop Service",
         "ITEM_4": "Bridges"
       }
+    },
+    "PROJECTS": {
+      "TITLE": "Projects that created tokens on MyWish"
     },
     "FEEDBACK": {
       "TITLE": "What people are saying",

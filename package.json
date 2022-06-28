@@ -27,5 +27,8 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp-html-i18n": "^0.16.0"
   }
 }

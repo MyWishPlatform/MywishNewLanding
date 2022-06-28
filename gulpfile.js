@@ -11,6 +11,7 @@ let path={
         img: project_folder+"/img/",
         fonts: project_folder+"/fonts/",
         assets: project_folder+"/assets/",
+        i18n: project_folder+"/i18n/"
     },
     src: { //для исходников
         html: [source_folder+"/**/*.html", "!"+source_folder+"/_*.html"],
@@ -47,6 +48,7 @@ let {src, dest} = require('gulp'),
     ttf2woff = require("gulp-ttf2woff"),
     ttf2woff2 = require("gulp-ttf2woff2"),
     fonter = require("gulp-fonter");
+    I18n = require('gulp-html-i18n');
 function browserSync(params){
     browsersync.init({
         server:{
@@ -154,6 +156,20 @@ function otf2ttf(){
         .pipe(dest(source_folder + "/fonts/"));
 }
 
+I18n({
+    langDir: '#src/lang',
+    renderEngine: 'mustache'
+})
+
+function i18n() {
+ src("#src/**/*.html")
+     .pipe(I18n({
+         langDir: '#src/lang',
+         trace: true
+     }))
+     .pipe(dest(path.build.html));
+}
+
 function fontsStyle(params) {
 
     let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
@@ -191,7 +207,7 @@ function clean(params){
 
 
 
-let build = gulp.series(clean, gulp.parallel(assets, css, js, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(assets, css, js, i18n, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 // exports.fontsStyle = fontsStyle;

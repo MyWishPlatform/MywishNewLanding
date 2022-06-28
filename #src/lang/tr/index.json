@@ -12,7 +12,7 @@
       "CREATE_NOW": "Şimdi Oluştur",
       "PROTECT_TOKENS": "Tokenleri Koruyun",
       "CONTINUE": "Continue",
-      "GET_STARTED": "Get Started",
+      "GET_STARTED": "Başla",
       "LAUNCH_BEP20_TOKEN": "Launch BEP20 token",
       "LAUNCH_CROWDSALE_ON_BSC": "Launch Crowdsale on BSC"
     }
@@ -21,8 +21,20 @@
     "MAIN_MENU": {
       "ITEM_1": "Hakkımızda",
       "ITEM_2": "Blok Zincirler",
-      "ITEM_3": "Solutions",
+      "ITEM_3": "Çözümler",
       "ITEM_4": "Blog"
+    },
+    "ABOUT_MENU": {
+      "ITEM_1": "Hakkımızda",
+      "ITEM_2": "Ekip",
+      "ITEM_3": "Kılavuzlar",
+      "ITEM_4": "İletişim"
+    },
+    "SOLUTIONS_MENU": {
+      "ITEM_1": "Token Oluşturucu",
+      "ITEM_2": "Cross-Chain Bridge",
+      "ITEM_3": "Airdrop Servisi",
+      "ITEM_4": "Özel Blockchain Geliştir"
     }
   },
   "SECTIONS": {
@@ -30,14 +42,14 @@
       "MAIN_PAGE": {
         "TITLE": "Kodlamadan Smart Contract Oluşturun",
         "ADDITIONAL": "Kodsuz Blockchain Çözümleri",
-        "DESCRIPTION": "Create your own Token, Smart-Contract, Cross-Chain Bridge & AirDrop in the easiest way with no coding skills required on MyWish",
+        "DESCRIPTION": "MyWish'te kodlama becerisi gerektirmeden kendi Token, Smart-Contract, Cross-Chain Bridge & AirDrop'unuzu en kolay şekilde oluşturun",
         "CONTRACTS": "Sözleşmeler",
         "USERS": "Kullanıcılar",
         "GRANTS_AND_HACKATONS": "Hibeler vs Hackathons"
       },
       "BSC_PAGE": {
         "TITLE": "Create, Distribute and Manage assets on\nBNB Chain without coding",
-        "ADDITIONAL": "Binance Partner since 2018"
+        "ADDITIONAL": "2018'den beri Binance İş Ortağı"
       }
     },
     "ASSETS": {
@@ -46,19 +58,19 @@
       "BLOCKS": {
         "ITEM_1": {
           "TITLE": "Kripto Varlıkları Oluşturun",
-          "STEP:": "1. Adım"
+          "STEP": "1. Adım"
         },
         "ITEM_2": {
           "TITLE": "Dağıt",
-          "STEP:": "2. Adım"
+          "STEP": "2. Adım"
         },
         "ITEM_3": {
           "TITLE": "Yönet ve Ölçeklendir",
-          "STEP:": "3. Adım"
+          "STEP": "3. Adım"
         },
         "ITEM_4": {
           "TITLE": "Korumaya al & Güvenceye al",
-          "STEP:": "4. Adım"
+          "STEP": "4. Adım"
         }
       }
     },
@@ -182,6 +194,9 @@
         "ITEM_4": "Bridges"
       }
     },
+    "PROJECTS": {
+      "TITLE": "Projects that created tokens on MyWish"
+    },
     "FEEDBACK": {
       "TITLE": "İnsanlar ne diyor",
       "DESCRIPTION": "We love and grow with our clients."
@@ -208,7 +223,7 @@
     "BLOCKS": {
       "ITEM_1": "Pre-Audited Smart Contracts",
       "ITEM_2": "Get 100% Ownership",
-      "ITEM_3": "Automated Deployment",
+        "ITEM_3": "Automated Deployment",
       "ITEM_4": "Smart Contracts Library",
       "ITEM_5": "Service Extension: Verification, Branded report"
     }
@@ -257,7 +272,7 @@
         "ITEM_11": "Near"
       },
       "LIST_3": {
-        "TITLE": "Solutions",
+        "TITLE": "Çözümler",
         "ITEM_1": "Token Oluşturucu",
         "ITEM_2": "Cross-Chain Çözümleri",
         "ITEM_3": "Airdrop Servisi",
