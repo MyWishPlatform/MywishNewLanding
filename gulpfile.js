@@ -47,7 +47,7 @@ let {src, dest} = require('gulp'),
     webpcss = require("gulp-webp-css"),
     ttf2woff = require("gulp-ttf2woff"),
     ttf2woff2 = require("gulp-ttf2woff2"),
-    fonter = require("gulp-fonter");
+    fonter = require("gulp-fonter"),
     I18n = require('gulp-html-i18n');
 function browserSync(params){
     browsersync.init({
